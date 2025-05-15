@@ -1,0 +1,952 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.headpage {
+    width: 100%;
+    background-color: black;
+
+}
+.brand{
+    margin-top: 30px;
+    margin-left: 30px;
+    color: white;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -40px;
+    margin-right: 50px;
+}
+
+.login-btn, .signup-btn {
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito", serif;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    color: rgba(154, 180, 230, 0.76);
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: white; /* Ensure the cart icon is white */
+    cursor: pointer;
+}
+
+.cart-icon a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Ensure the link inside the cart icon is white */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.cart-icon:hover a {
+    color: rgba(154, 180, 230, 0.76); /* Accent color on hover */
+}
+
+.cart-count {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background-color: rgba(154, 180, 230, 0.76); /* Accent color for the count badge */
+    color: white; /* White text inside the badge */
+    border-radius: 50%; /* Circular badge */
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cart-icon i {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: white;
+
+}
+
+.cart-icon:hover i {
+    color: rgba(154, 180, 230, 0.76);
+}
+
+.cart-count {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background-color: rgba(154, 180, 230, 0.76);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    font-size: 36px; /* Increase this value for larger text */
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.navigation.active {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color:  white;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+   
+}
+
+.navigation a:hover {
+    color: rgba(154, 180, 230, 0.76); /* Change to gold color on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+}
+
+.navigation a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgba(154, 180, 230, 0.76);
+    transition: width 0.3s;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+}
+
+
+
+.size {
+    font-size: 200px;
+    color: white;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+}
+.size:hover {
+    color: rgba(154, 180, 230, 0.76) /* Change to the same color as navigation hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+}
+
+.main-page {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 220px;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    
+}
+
+.mid-text {
+    display: flex;
+}
+
+.img-head {
+    margin-top: 110px;
+    margin-left: -200px;
+    height: 350px;
+    transform: rotate(15deg);
+}
+.one:hover {
+    transform: translateY(-5px) rotate(-5deg); /* Slight rotation for "FIND" */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+    color: rgba(154, 180, 230, 0.76); /* Change to gold color on hover */
+}
+
+.two {
+    margin-top: 300px;
+    margin-left: -300px;
+}
+.two:hover {
+    transform: translateY(-5px) scale(1.05); /* Slight scale for "YOUR" */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+    color: rgba(154, 180, 230, 0.76); /* Change to gold color on hover */
+}
+
+.three {
+    margin-top: -100px;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.three:hover {
+    transform: translateY(-5px) rotate(5deg); /* Slight rotation for "VIBE" */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+    color: rgba(154, 180, 230, 0.76); /* Change to gold color on hover */
+}
+
+.tottom-main-page {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -70px;
+}
+
+.p-text {
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.p-text:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+    color: rgba(154, 180, 230, 0.76); /* Change to gold color on hover */
+}
+.p-one {
+    width: 290px;
+}
+
+.p-two {
+    width: 150px;
+    height: 150px;
+    border: solid 2px white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    margin-top: -40px;
+}
+.p-two:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+    border-color:  rgba(154, 180, 230, 0.76); /* Change to gold color on hover */
+}
+.main-header{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+.Products-main{
+    font-size: 900px; /* Increase font size */
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    text-align: center; /* Center the text horizontally */
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+.grid-head {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 80px; /* Space between items */
+    width: 95%; /* Make it take up more space */
+    max-width: 1400px; /* Increase width */
+    min-height: 500px; /* Make the grid taller */
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 10px;
+    margin: auto; /* Center the grid */
+    
+}
+.grid-item {
+    width: 100%; /* Full column width */
+    height: 450px; /* Make each item at least 450px tall */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-left: -20px;
+    object-fit: cover;
+    transition: 0.2s cubic-bezier(0.25, 0, 0.25, 1); /* Fixed cubic-bezier syntax */
+}
+
+/* Corrected .grid-item:hover */
+.grid-item:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+.grid-img {
+    width: 100%;
+    max-width: 400px; /* Increase max image width */
+    height: 400px; /* Set image height to 400px */
+    object-fit: cover; /* Ensure it fills the space */
+    border-radius: 5px;
+}
+
+
+.grid-price {
+    display: flex;
+    gap: 70px;
+    text-align: start;
+    height: 10px;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+.grid-p {
+   
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.Products-main-bottom{
+    font-size:20px;
+    margin-left: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+
+.footer{
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.container1 {
+    max-width: 900px;
+    margin: auto;
+}
+.container1 h1:hover{
+    color: rgba(154, 180, 230, 0.76); /* Change to gold color on hover */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.container1 .feature:hover{
+    color: rgba(154, 180, 230, 0.76); /* Change to gold color on hover */
+    text-shadow: 0 0 10px rgba(154, 180, 230, 0.76); /* Glow effect */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.feature {
+    text-align: center;
+}
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Contact Us Section - Dark Theme */
+.contact-section {
+    background-color: #111; /* Dark background */
+    color: white; /* White text for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #222; /* Slightly lighter dark background for the form */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+}
+
+.contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "Nunito", serif;
+    color: rgba(154, 180, 230, 0.9); /* Accent color for the title */
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #aaa; /* Softer white for subtitle */
+    font-family: "Nunito", serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #ddd; /* Softer white for labels */
+    font-family: "Nunito", serif;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Nunito", serif;
+    color: white; /* White text inside inputs */
+    background-color: #333; /* Dark input background */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777; /* Softer placeholder text */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: rgba(154, 180, 230, 0.9); /* Accent color on focus */
+    box-shadow: 0 0 10px rgba(154, 180, 230, 0.5); /* Glow effect on focus */
+    outline: none;
+}
+
+.contact-btn {
+    background: linear-gradient(135deg, rgba(154, 180, 230, 0.9), rgba(100, 150, 230, 0.9));
+    color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(135deg, rgba(100, 150, 230, 0.9), rgba(154, 180, 230, 0.9));
+    transform: scale(1.05); /* Slight zoom effect */
+    color: white;
+}
+
+/* Contact Info Section */
+.contact-info {
+    margin-top: 40px;
+    text-align: center; /* Center the entire section */
+    color: white;
+    font-family: "Nunito", serif;
+}
+
+.info-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(154, 180, 230, 0.9); /* Accent color for the title */
+}
+
+/* Display info items in a row */
+.info-items {
+    display: flex;
+    justify-content: center; /* Center the row */
+    gap: 40px; /* Space between items */
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center-align the content */
+    gap: 10px; /* Space between icon and text */
+}
+
+.info-item i {
+    font-size: 24px;
+    color: rgba(154, 180, 230, 0.9); /* Accent color for icons */
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #ddd; /* Softer white for text */
+    margin: 0;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Space between icons */
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333; /* Dark background for icons */
+    color: white; /* White icon color */
+    border-radius: 50%; /* Circular icons */
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+.social-icon:hover {
+    background-color: rgba(154, 180, 230, 0.9); /* Accent color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    color: black; /* Change icon color on hover */
+}
+h3{
+    font-size: 12px;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and small desktops (max width: 1024px) */
+@media (max-width: 1104px){
+    .size {
+        font-size: 120px;
+    }
+
+    .navigation{
+        font-size: 16px;
+    }
+    .tottom-main-page {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -90px;
+    }
+    
+
+    .main-page {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-left: -100px;
+        gap: 220px;
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+    
+
+    .mid-text {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .img-head{
+        height: 230px;
+        margin-left: -220;
+        margin-top: -10px;
+    }
+
+    .two {
+        margin-top: -90px;
+        margin-left: 290px;
+    }
+    
+
+    .three {
+        margin-top: 0;
+    }
+
+    
+.p-two {
+    width: 150px;
+    height: 150px;
+    border: solid 2px white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    margin-top: -40px;
+}
+    .p-text {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        margin-top: 20px;
+        font-size: 15px;
+        color: white;
+        font-family: "Nunito", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+    .p-one {
+        width: 210px;
+        margin-top: 60px;
+    }
+    .Products-main-bottom{
+        font-size:13px;
+        margin-left: 30px;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    
+    }
+    .Products-main{
+        font-size: 50px;
+        margin-left: 60px;
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+    .hi-text{
+
+    }
+    .grid-item {
+        width: 100%; /* Full column width */
+        height: 350px; /* Make each item at least 450px tall */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        margin-left: -20px;
+        object-fit: cover;
+        transform: 0.2s cubic-bezir(0.25, 0,1 0,25, 1);
+    }
+
+    .grid-item:hover{
+        transform: scale(1.1); /* Slightly increase size on hover */
+    }
+
+    /* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 70px; /* Space between items */
+    width: 95%; /* Make it take up more space */
+    max-width: 1400px; /* Increase width */
+    min-height: 300px; /* Make the grid taller */
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 10px;
+    margin: auto; /* Center the grid */
+}
+    .grid-img {
+        width: 100%;
+        max-width: 400px; /* Increase max image width */
+        height: 300px; /* Set image height to 400px */
+        object-fit: cover; /* Ensure it fills the space */
+        border-radius: 5px;
+    }
+    .grid-p {
+        margin: 5px 0;
+        font-size: 12px;
+        color: #333;
+        margin-left: -16px;
+    }
+    .grid-price {
+        background-color: #f5f5f5;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 12px;
+        color: #333;
+        text-align: center;
+    }
+
+/* For mobile devices (max width: 768px) */
+@media (max-width: 768px) {
+    .navigation {
+        display: none !important; /* Hide by default on mobile */
+        flex-direction: column;
+        gap: 1px;
+        text-align: center;
+        font-size: 8px;
+        margin-left: 30px;
+        margin-top: 20px;
+       
+    }
+    .navigation.active {
+        display: flex !important; /* Show when active */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .brand {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        text-align: center;
+        font-size: 8px;
+        width: 100%;
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+    .navigation.active {
+    display: block;
+}
+    .sandwich-container {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        margin-right: 30px;
+
+        
+    }
+    .sandwich {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        text-align: center;
+        font-size: 8px;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: auto; /* Pushes the sandwich to the right in a flex container */
+    }
+    .sandwich-bar {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin: 2px 0;
+    }
+    .user-actions { 
+        margin-right: 20px;
+    }
+
+    .login-btn, .signup-btn {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .cart-icon {
+        font-size: 20px;
+    }
+
+    .cart-count {
+        top: 20px;
+        right: 15px;
+        padding: 1px 4px;
+        font-size: 10px;
+    }
+    .tottom-main-page {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: -88px;
+        margin-left: -60px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .size {
+        font-size: 40px;
+    }
+
+    .main-page {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        margin-left: -55px;
+        margin-bottom: 60px;
+        gap: 220px;
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }  
+    
+
+    .mid-text {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+    .two {
+        margin-top: -100px;
+        margin-left: 120px;
+    }
+   
+
+    .img-head{
+        height: 100px;
+        margin-left: -290;
+        margin-top: -40px;
+    }
+
+    .p-text {
+        display: flex;
+        text-align: center;
+        width: 10px;
+        margin-top: 10px;
+        margin-right: 0px;
+        font-size: 10px;
+        color: white;
+        font-family: "Nunito", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+    .p-one{
+        width: 110px;
+    }
+    .p-two {
+        width: 60px;
+        height: 60px;
+        border: solid 2px white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        margin-top: -10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Creates a single column */
+    grid-auto-rows: auto; /* Automatically sizes rows based on content */
+    gap: 10px; /* Space between items */
+    row-gap: 40px;
+    width: 100%;
+    max-width: 850px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.grid-item {
+    width: 80%; /* Full column width */
+    height: 350px; /* Make each item at least 450px tall */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.grid-img {
+    width: 100%;
+    max-width: 300px; /* Increase max image width */
+    height: 350px; /* Set image height to 400px */
+    object-fit: cover; /* Ensure it fills the space */
+    border-radius: 5px;
+}
+.grid-price {
+    background-color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.grid-p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #333;
+}
+}
+
+/* For very small screens (max width: 480px) */
+@media (max-width: 480px) {
+    .size {
+        font-size: 80px;
+    }
+
+    .p-text {
+        font-size: 16px;
+    }
+
+    .p-two {
+        width: 80px;
+        height: 80px;
+    }
+
+    img {
+        height: 150px;
+    }
+    .user-actions {
+        margin-top: -25px;
+        margin-right: 10px;
+    }
+
+    .login-btn, .signup-btn {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .cart-icon {
+        font-size: 18px;
+    }
+
+    .cart-count {
+        top: 15px;
+        right: 10px;
+        padding: 1px 3px;
+        font-size: 8px;
+    }
+}
